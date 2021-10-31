@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+
+    <!-- Box icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!-- Glidejs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="./css/all.css">
+
+</head>
+<body>
+    <nav>
+    <!--navigation-->
+    <div class="social-call">
+        <!--social link-->
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!--phone number-->
+        <div class="phone">
+            <span>Call +123456789</span>
+        </div>
+    </div>
+    <!--menu bar-->
+    <div class="navigation">
+        <!--logo-->
+        <a href="#" class="logo"><img src="" alt="">Logo</a>
+        <!--menu icon-->
+        <div class="toggle">
+        </div>
+        <!--menu-->
+        <ul class="menu">
+            <li>
+                <a href="#">Đặt hàng</a>
+                <!--sale-->
+                <span class="sale-label">Khuyến mãi</span>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Cửa hàng</a></li>
+            <li><a href="#">Khuyến mãi</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+        </ul>
+        <!--right menu-->
+        <div class="right-menu">
+            <a href="javascript:void(0);" class="search"><i class="fas fa-search"></i></a>
+            <a href="javascript:void(0);" class="user"><i class="far fa-user"></i></a>
+            <a href="#" class="bag">
+                <i class="fas fa-shopping-bag">
+                    <!--number of product in bag-->
+                    <span class="num-bag-product">0</span>
+                </i>
+            </a>
+        </div>
+    </div>
+    </nav>
+    
+    <!--search bar-->
+    <div class="search-bar">
+        <div class="search-input">
+            <input type="text" placeholder="Tìm theo tên sản phẩm bạn quan tâm..."/>
+            <a href="javascript:void(0);" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+    
+    <!--login and sig up form-->
+    <div class="form">
+        <!--login-->
+        <div class="login-form">
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <img src="./img/thumbnail-login.png" alt="">
+            <span>Chào mừng bạn đến với</span>
+            <strong>Cofee Shop</strong>
+            <form action="">
+                <input type="phone" placeholder="Nhập số điện thoại" name="phone" required>
+                <input type="password" placeholder="Mật khẩu" name="password" required>
+                <input type="submit" value="Đăng nhập">
+            </form>
+            <!--forget and sign up-->
+            <div class="form-btns">
+                <a href="#" class="forget">Quên mật khẩu?</a>
+                <a href="javascript:void(0);" class="sign-up-btn">Đăng ký</a>
+            </div>            
+        </div>
+        <!--Sign up-->
+        <div class="signup-form">
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <img src="./img/thumbnail-login.png" alt="">
+            <span>Chào mừng bạn đến với</span>
+            <strong>Cofee Shop</strong>
+            <form action="">
+                <input type="text" placeholder="Ho và tên" name="name" required>
+                <input type="phone" placeholder="Nhập số điện thoại" name="phone" required>
+                <input type="password" placeholder="Mật khẩu" name="password" required>
+                <input type="password" placeholder="Nhập lại mật khẩu" name="repassword" required>
+                <input type="submit" value="Đăng ký">
+            </form>
+            <!--forget and sign up-->
+            <div class="form-btns">
+                <a href="javascript:void(0);" class="already-member">Đã là thành viên?</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details -->
+    <section class="section product-detail">
+        <div class="details container-md">
+            <div class="left">
+                <div class="main">
+                    <img src="./img/product/1.jpg" alt="">
+                </div>
+            <div class="thumbnails">
+                <div class="thumbnail">
+                    <img src="./img/product/1.jpg" alt="">
+                </div>
+                <div class="thumbnail">
+                    <img src="./img/product/1.jpg" alt="">
+                </div>
+                <div class="thumbnail">
+                    <img src="./img/product/1.jpg" alt="">
+                </div>
+                <div class="thumbnail">
+                    <img src="./img/product/1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <span>Caffee</span>
+            <h1>Caffee</h1>
+            <div class="price">$2.00</div>
+            <form>
+                <div>
+                    <select>
+                        <option value="Select Size" selected disabled>Select Size</option>
+                        <option value="1">32</option>
+                        <option value="2">42</option>
+                        <option value="3">52</option>
+                    </select>
+                    <span><i class='bx bx-chevron-down'></i></span>
+                </div>
+            </form>
+    
+            <form class="form">
+                <input type="text" placeholder="1">
+                <a href="bag.html" class="addCart">Add To Cart</a>
+            </form>
+            <h3>Product Detail</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero minima delectus nulla voluptates nesciunt
+              quidem laudantium, quisquam voluptas facilis dicta in explicabo, laboriosam ipsam suscipit!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related -->
+    <div class="top container">
+        <h1>Related Products</h1>
+        <a href="#" class="view-more">View more</a>
+    </div>
+
+    <section class="product-list">
+        <div class="product-container">  
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <a href="product-details.html">
+                        <img src="./img/product/1.jpg">
+                    </a>
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="product-details.html" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <a href="product-details.html">
+                        <img src="./img/product/2.jpg">
+                    </a>
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="product-details.html" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/3.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/4.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+        </div>
+  </section>
+
+
+  <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>

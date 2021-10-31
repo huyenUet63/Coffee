@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+
+    <!--stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/lightslider.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="./css/all.css">
+
+    <!--fav-icon-->
+    <link rel="shortcut icon" href="">
+</head>
+<body>
+    <nav>
+    <!--navigation-->
+    <div class="social-call">
+        <!--social link-->
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <!--phone number-->
+        <div class="phone">
+            <span>Call +123456789</span>
+        </div>
+    </div>
+    <!--menu bar-->
+    <div class="navigation">
+        <!--logo-->
+        <a href="#" class="logo"><img src="" alt="">Logo</a>
+        <!--menu icon-->
+        <div class="toggle">
+
+        </div>
+        <!--menu-->
+        <ul class="menu">
+            <li>
+                <a href="#">Đặt hàng</a>
+                <!--sale-->
+                <span class="sale-label">Khuyến mãi</span>
+            </li>
+            <li><a href="#">Tin tức</a></li>
+            <li><a href="#">Cửa hàng</a></li>
+            <li><a href="#">Khuyến mãi</a></li>
+            <li><a href="#">Tuyển dụng</a></li>
+        </ul>
+        <!--right menu-->
+        <div class="right-menu">
+            <a href="javascript:void(0);" class="search"><i class="fas fa-search"></i></a>
+            <a href="javascript:void(0);" class="user"><i class="far fa-user"></i></a>
+            <a href="#" class="bag">
+                <i class="fas fa-shopping-bag">
+                    <!--number of product in bag-->
+                    <span class="num-bag-product">0</span>
+                </i>
+            </a>
+        </div>
+    </div>
+    </nav>
+
+    <!--search bar-->
+    <div class="search-bar">
+        <div class="search-input">
+            <input type="text" placeholder="Tìm theo tên sản phẩm bạn quan tâm..."/>
+            <a href="javascript:void(0);" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+
+    <!--login and sig up form-->
+    <div class="form">
+        <!--login-->
+        <div class="login-form">
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <img src="./img/thumbnail-login.png" alt="">
+            <span>Chào mừng bạn đến với</span>
+            <strong>Cofee Shop</strong>
+            <form action="">
+                <input type="phone" placeholder="Nhập số điện thoại" name="phone" required>
+                <input type="password" placeholder="Mật khẩu" name="password" required>
+                <input type="submit" value="Đăng nhập">
+            </form>
+            <!--forget and sign up-->
+            <div class="form-btns">
+                <a href="#" class="forget">Quên mật khẩu?</a>
+                <a href="javascript:void(0);" class="sign-up-btn">Đăng ký</a>
+            </div>
+        </div>
+        <!--Sign up-->
+        <div class="signup-form">
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <img src="./img/thumbnail-login.png" alt="">
+            <span>Chào mừng bạn đến với</span>
+            <strong>Cofee Shop</strong>
+            <form action="">
+                <input type="text" placeholder="Ho và tên" name="name" required>
+                <input type="phone" placeholder="Nhập số điện thoại" name="phone" required>
+                <input type="password" placeholder="Mật khẩu" name="password" required>
+                <input type="password" placeholder="Nhập lại mật khẩu" name="repassword" required>
+                <input type="submit" value="Đăng ký">
+            </form>
+            <!--forget and sign up-->
+            <div class="form-btns">
+                <a href="javascript:void(0);" class="already-member">Đã là thành viên?</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Slider-->
+    <ul id="adaptive" class="cs-hidden">
+        <li class="item-a">
+            <div class="full-slider-box">
+                <a href=""><img src="./img/slider/baner-home-web.jpg" alt=""></a>
+            </div>
+        </li>
+        <li class="item-a">
+            <div class="full-slider-box">
+                <a href=""><img src="./img/slider/banner-home.jpg" alt=""></a>
+            </div>
+        </li>
+    </ul>
+
+    <!--product category-->
+    <div class="category-heading">
+        <h2>Sản phẩm từ Nhà</h2>
+    </div>
+    <!--product categories slider-->
+    <ul id="autoWidth" class="container" class="cs-hidden">
+        <li class="item">
+            <div class="category-box">
+                <a href="#">
+                    <img src="./img/category/cate_favourite.png">
+                </a>
+            </div>
+            <span>Đang được yêu thích</span>
+        </li>
+        <li class="item">
+            <div class="category-box">
+                <a href="#">
+                    <img src="./img/category/cg_coffee_web.png">
+                </a>
+            </div>
+            <span>Cà phê</span>
+        </li>
+        <li class="item">
+            <div class="category-box">
+                <a href="#">
+                    <img src="./img/category/cg_cpg_web.png">
+                </a>
+            </div>
+            <span>Trà trái cây - Trà sữa</span>
+        </li>
+        <li class="item">
+            <div class="category-box">
+                <a href="#">
+                    <img src="./img/category/cg_frappu_web.png">
+                </a>
+            </div>
+            <span>Đá xay - Choco - Matcha</span>
+        </li>
+        <li class="item">
+            <div class="category-box">
+                <a href="#">
+                    <img src="./img/category/cg_merchandise_web.png">
+                </a>
+            </div>
+            <span>Thưởng thức tại nhà</span>
+        </li>
+        <li class="item">
+            <div class="category-box">
+                <a href="#">
+                    <img src="./img/category/cg_tea_milk_tea_web.png">
+                </a>
+            </div>
+            <span>Bộ sưu tập quà tặng</span>
+        </li>
+    </ul>
+
+    <!--product-->
+    <section class="product-list">
+        <div class="product-container">  
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <a href="product-details.html">
+                        <img src="./img/product/1.jpg">
+                    </a>
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="product-details.html" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <a href="product-details.html">
+                        <img src="./img/product/2.jpg">
+                    </a>
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="product-details.html" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/3.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/4.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/5.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/6.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/7.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/8.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/9.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/americano.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/banh-banh-2-trung-cut.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/banh-me-cha-bong-pho-mai.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/banh-mi-que.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/bong-lan-trung-muoi.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/ca-phe-da-xay.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/cam-tuoi-say-deo.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/caphearabica.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/capheden.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/caphephin.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/cappuchino.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div>
+            <div class="product-box">
+                <div class="product-img">
+                    <!--add-cart-->
+                    <a href="#" class="add-cart">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                    <!--img------>
+                    <img src="./img/product/caramel-macchiato.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="#" class="p-name">Caffee</a>
+                    <span class="p-price">$2.00</span>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!--Blog-->
+    <div class="blog">
+        <h2>Tin tức</h2>
+    </div>
+
+    <!--services------------------------->
+    <section class="services">
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Free Shipping</span>
+            <p>Miễn phí giao hàng trong vòng 2km</p>
+        </div>
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-headphones-alt"></i>
+            <span>Phục vụ 24/7</span>
+            <p>Nhận đặt hàng 24h một ngày</p>
+        </div>
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-sync"></i>
+            <span>Hoàn tiền 100%</span>
+            <p>30 phút giao muộn</p>
+        </div>
+    </section>
+
+    <!--footer---------------------------->
+    <footer>
+        <!--copyright-------------->
+        <span class="copyright">
+            Copyright 2021 - Coffee Shop
+        </span>
+        <!--subcribe---------------->
+        <div class="subscribe">
+            <form>
+            <input type="email" placeholder="Example@gmail.com" required/>
+            <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </footer>
+    
+  
+
+
+
+
+    <!--Jquery Library File-->
+    <script src="./js/Jquery3.5.1.min.js"></script>
+    <script src="./js/lightslider.js"></script>
+    <!--script-->
+    <script type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
