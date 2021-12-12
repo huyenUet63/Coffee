@@ -6,11 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details</title>
 
-    <!-- Box icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
-
-    <!-- Glidejs -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css" />
     <!-- Custom StyleSheet -->
     <link rel="stylesheet" href="./css/style.css" />
     <!--FontAwesome-->
@@ -36,7 +31,7 @@
     <!--menu bar-->
     <div class="navigation">
         <!--logo-->
-        <a href="#" class="logo"><img src="" alt="">Logo</a>
+        <a href="index.html" class="logo"><img src="" alt="">Logo</a>
         <!--menu icon-->
         <div class="toggle">
         </div>
@@ -56,7 +51,7 @@
         <div class="right-menu">
             <a href="javascript:void(0);" class="search"><i class="fas fa-search"></i></a>
             <a href="javascript:void(0);" class="user"><i class="far fa-user"></i></a>
-            <a href="#" class="bag">
+            <a href="cart.html" class="bag">
                 <i class="fas fa-shopping-bag">
                     <!--number of product in bag-->
                     <span class="num-bag-product">0</span>
@@ -120,61 +115,61 @@
     </div>
 
     <!-- Product Details -->
-    <section class="section product-detail">
+    <section class="section product">
         <div class="details container-md">
-            <div class="left">
-                <div class="main">
-                    <img src="./img/product/1.jpg" alt="">
-                </div>
-            <div class="thumbnails">
-                <div class="thumbnail">
-                    <img src="./img/product/1.jpg" alt="">
-                </div>
-                <div class="thumbnail">
-                    <img src="./img/product/1.jpg" alt="">
-                </div>
-                <div class="thumbnail">
-                    <img src="./img/product/1.jpg" alt="">
-                </div>
-                <div class="thumbnail">
-                    <img src="./img/product/1.jpg" alt="">
-                </div>
+          <div class="left">
+            <div class="main">
+              <img src="./img/product/1.jpg" alt="">
             </div>
-        </div>
-        <div class="right">
-            <span>Caffee</span>
-            <h1>Caffee</h1>
-            <div class="price">$2.00</div>
+            <div class="thumbnails">
+              <div class="thumbnail">
+                <img src="./img/product/1.jpg" alt="">
+              </div>
+              <div class="thumbnail">
+                <img src="./img/product/1.jpg" alt="">
+              </div>
+              <div class="thumbnail">
+                <img src="./img/product/1.jpg" alt="">
+              </div>
+              <div class="thumbnail">
+                <img src="./img/product/1.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="right">
+            <h1>Coffee</h1>
+            <div class="price">$50</div>
             <form>
-                <div>
-                    <select>
-                        <option value="Select Size" selected disabled>Select Size</option>
-                        <option value="1">32</option>
-                        <option value="2">42</option>
-                        <option value="3">52</option>
-                    </select>
-                    <span><i class='bx bx-chevron-down'></i></span>
-                </div>
+              <div>
+                <select>
+                  <option value="Select Size" selected disabled>Chọn Size</option>
+                  <option value="1">S</option>
+                  <option value="2">M + $2</option>
+                  <option value="3">L + $7</option>
+                </select>
+                <span><i class='bx bx-chevron-down'></i></span>
+              </div>
             </form>
     
-            <form class="form">
-                <input type="text" placeholder="1">
-                <a href="bag.html" class="addCart">Add To Cart</a>
+            <form class="add-form">
+              <input type="text" placeholder="1">
+              <a href="cart.html" class="addCart">Add To Cart</a>
             </form>
-            <h3>Product Detail</h3>
+            <h3>Thông tin</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero minima delectus nulla voluptates nesciunt
               quidem laudantium, quisquam voluptas facilis dicta in explicabo, laboriosam ipsam suscipit!</p>
-            </div>
+          </div>
         </div>
     </section>
+    
 
     <!-- Related -->
-    <div class="top container">
-        <h1>Related Products</h1>
-        <a href="#" class="view-more">View more</a>
-    </div>
+    <section class="product-list related">
+        <div class="category-heading container">
+            <h2>Sản phẩm liên quan</h2>
+            <!-- <a href="#" class="view-more">Xem thêm</a> -->
+        </div>
 
-    <section class="product-list">
         <div class="product-container">  
             <div class="product-box">
                 <div class="product-img">
@@ -241,9 +236,23 @@
                 </div>
             </div>
         </div>
-  </section>
+    </section>
 
+    <!--footer-->
+    <footer>
+        <!--copyright-->
+        <span class="copyright">
+            Copyright 2021 - Coffee Shop
+        </span>
+        <!--subcribe-->
+        <div class="subscribe">
+            <form>
+            <input type="email" placeholder="Example@gmail.com" required/>
+            <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </footer>
 
-  <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

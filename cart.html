@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--stylesheet-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+<body>
+    <nav>
+        <!--navigation-->
+        <div class="social-call">
+            <!--social link-->
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!--phone number-->
+            <div class="phone">
+                <span>Call +123456789</span>
+            </div>
+        </div>
+        <!--menu bar-->
+        <div class="navigation">
+            <!--logo-->
+            <a href="index.html" class="logo"><img src="" alt="">Logo</a>
+            <!--menu icon-->
+            <div class="toggle">
+    
+            </div>
+            <!--menu-->
+            <ul class="menu">
+                <li>
+                    <a href="#">Đặt hàng</a>
+                    <!--sale-->
+                    <span class="sale-label">Khuyến mãi</span>
+                </li>
+                <li><a href="#">Tin tức</a></li>
+                <li><a href="#">Cửa hàng</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="#">Tuyển dụng</a></li>
+            </ul>
+            <!--right menu-->
+            <div class="right-menu">
+                <a href="javascript:void(0);" class="search"><i class="fas fa-search"></i></a>
+                <a href="javascript:void(0);" class="user"><i class="far fa-user"></i></a>
+                <a href="cart.html" class="bag">
+                    <i class="fas fa-shopping-bag">
+                        <!--number of product in bag-->
+                        <span class="num-bag-product">0</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--search bar-->
+    <div class="search-bar">
+        <div class="search-input">
+            <input type="text" placeholder="Tìm theo tên sản phẩm bạn quan tâm..."/>
+            <a href="javascript:void(0);" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Cart Items -->
+    <div class="container-md cart">
+    <table>
+      <tr>
+        <th>Sản phẩm</th>
+        <th>Số lượng</th>
+        <th>Giá trị</th>
+      </tr>
+      <tr>
+        <td>
+          <div class="cart-info">
+            <img src="./img/product/1.jpg" alt="">
+            <div>
+              <p>Coffee</p>
+              <span>Đơn giá: $50.00</span>
+              <br/>
+              <a href="#">Bỏ khỏi giỏ</a>
+            </div>
+          </div>
+        </td>
+        <td><input type="number" value="1" min="1"></td>
+        <td>$50.00</td>
+      </tr>
+    </table>
+
+    <div class="total-price">
+      <table>
+        <tr>
+          <td>Tổng cộng</td>
+          <td>$200</td>
+        </tr>
+        <!-- <tr>
+          <td>Tax</td>
+          <td>$50</td>
+        </tr>
+        <tr>
+          <td>Total</td>
+          <td>$250</td>
+        </tr> -->
+      </table>
+      <a href="#" class="checkout btn">Thanh toán</a>
+
+    </div>
+
+    </div>
+
+
+
+   <!--footer-->
+   <footer>
+       <!--copyright-->
+       <span class="copyright">Copyright 2021 - Coffee Shop</span>
+       <!--subcribe-->
+       <div class="subscribe">
+            <form>
+                <input type="email" placeholder="Example@gmail.com" required/>
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </footer>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <!-- Custom Script -->
+    <script src="./js/main.js"></script>
+
+</body>
+</html>
